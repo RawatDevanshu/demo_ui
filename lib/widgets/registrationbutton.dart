@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
 
-class HomePageBtn extends StatelessWidget {
+class RegistrationBtn extends StatelessWidget {
   final VoidCallback onPressed;
-  final String text;
   final MediaQueryData media;
-  const HomePageBtn(
-      {super.key,
-      required this.onPressed,
-      required this.text,
-      required this.media});
+  const RegistrationBtn(
+      {super.key, required this.onPressed, required this.media});
 
   @override
   Widget build(BuildContext context) {
@@ -22,12 +18,9 @@ class HomePageBtn extends StatelessWidget {
           onPressed: onPressed,
           style: ElevatedButton.styleFrom(backgroundColor: Colors.indigo),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Icon(Icons.person),
-              const SizedBox(
-                width: 5,
-              ),
-              Text(text),
+              Text('Register'),
             ],
           )),
     );

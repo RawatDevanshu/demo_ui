@@ -1,5 +1,6 @@
 import 'package:bharatrides_ui/widgets/customappbar.dart';
 import 'package:bharatrides_ui/widgets/customdropdownbtn.dart';
+import 'package:bharatrides_ui/widgets/registrationbutton.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/customtextfield.dart';
@@ -25,6 +26,7 @@ class _FacultyLoginState extends State<FacultyLogin> {
           ),
           CustomTextField(fieldName: 'Name', hintText: 'Enter your name'),
           CustomDropDown(),
+          RegistrationBtn(onPressed: () {}, media: MediaQuery.of(context)),
         ],
       ),
     );

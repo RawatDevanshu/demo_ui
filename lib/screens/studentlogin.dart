@@ -3,6 +3,7 @@ import 'package:bharatrides_ui/widgets/customdropdownbtn.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/customtextfield.dart';
+import '../widgets/registrationbutton.dart';
 
 class StudentLogin extends StatefulWidget {
   const StudentLogin({super.key});
@@ -24,6 +25,7 @@ class _StudentLoginState extends State<StudentLogin> {
             hintText: 'Enter your id',
           ),
           const CustomDropDown(),
+          RegistrationBtn(onPressed: () {}, media: MediaQuery.of(context)),
         ],
       ),
     );
